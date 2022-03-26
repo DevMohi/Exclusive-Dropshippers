@@ -113,7 +113,7 @@ const Bags = () => {
 
                     <Accordion.Item eventKey="2">
                         <Accordion.Header>How Use State Works?</Accordion.Header>
-                        <Accordion.Body className='text-left'>
+                        <Accordion.Body >
                             useState is a Hook(function) that allows you to have state variables in functional components. You pass the initital state to this function and it returns a variable with the current state value and also another function to update this value.
                         </Accordion.Body>
                     </Accordion.Item>
