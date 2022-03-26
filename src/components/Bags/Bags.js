@@ -5,32 +5,47 @@ import './Bags.css'
 
 const Bags = () => {
     const [bags, setBags] = useState([])
+    const [details, setDetails] = useState([])
+
     useEffect(() => {
         fetch('db.json')
             .then(res => res.json())
             .then(data => setBags(data))
     }, [])
+
+    const handleDetailsButton = (bag) => {
+        console.log(bag)
+        const newBag = [...details , bag] 
+        setDetails(newBag)
+        // const newMeal = [...details, bags];
+        // setDetails(newMeal);
+    }
+
     return (
         <div>
-            <Container>
-                <Row>
-                    <Col sm={9}>
-                        <h1 className='py-2'>All Bags</h1>
-                        <div className='parent-bag'>
-                            {
-                                bags.map(bag => <Bag
-                                    key = {bag.id}
-                                    bag = {bag}
-                                ></Bag>)
-                            }
-                        </div>
+            <Row>
+                <Col sm={8}>
+                    <h1 className='py-2'>All Bags</h1>
+                    <div className='parent-bag'>
+                        {
+                            bags.map(bag => <Bag
+                                key={bag.id}
+                                bag={bag}
+                                handleDetailsButton = {handleDetailsButton}
+                            ></Bag>)
+                        }
+                    </div>
 
-                    </Col>
+                </Col>
 
 
-                    <Col sm={3}>Selected Details</Col>
-                </Row>
-            </Container>
+                <Col sm={4}>
+                    <h3>Details</h3>
+                    {
+                    details.map(detail => console.log(detail))
+                    }
+                </Col>
+            </Row>
         </div>
     );
 };
