@@ -40,8 +40,6 @@ const Bags = () => {
             if (randomNumber === parseInt(detail.id)) {
                 console.log(detail)
                 setDetails([detail])
-                document.getElementById('result').style.display = 'block'
-
             }
         }
     }
@@ -49,7 +47,9 @@ const Bags = () => {
 
     const resetCart = () => [
         setDetails([]),
-        document.getElementById('result').style.display = 'none'
+        document.getElementById('random-container').style.display = 'none'
+
+
     ]
     return (
         <div >
@@ -70,9 +70,9 @@ const Bags = () => {
 
 
                 <Col sm={4}>
-                    <h3 className='py-3'>Details</h3>
+                    <h3 className='py-2'>Details</h3>
 
-                    <div className='ms-2 me-2'>
+                    <div className='py-5'>
                         {
                             details.map(detail =>
                                 <Detail
@@ -83,16 +83,16 @@ const Bags = () => {
                         }
                     </div>
 
-                    <div id='random-container' className='mx-auto' style={{ display: 'none' }}>
-                        <button className='border bg-dark p-2 mx-2 text-white' onClick={() => randomPicker(details)}>Choose For Me</button>
-                        <button className='border bg-danger p-2 text-white' onClick={resetCart}>Choose Again</button>
+                    <div id='random-container' className='pb-3' style={{ display: 'none' }}>
+                        <button className='border bg-dark p-2 rounded mx-2 text-white' onClick={() => randomPicker(details)}>Choose For Me</button>
+                        <button className='border bg-dark p-2 rounded text-white ' onClick={resetCart}>Choose Again</button>
                     </div>
 
 
                 </Col>
             </Row>
 
-            <div className='my-5 px-5'>
+            <Container className='my-5 px-4 '>
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>How React Works?</Accordion.Header>
@@ -118,7 +118,7 @@ const Bags = () => {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-            </div>
+            </Container>
         </div>
     );
 };

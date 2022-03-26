@@ -5,18 +5,22 @@
   gap: 30px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1260px) {
   .parent-bag {
     grid-template-columns: repeat(2, 1fr);
+
   }
-  
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .parent-bag {
     grid-template-columns: repeat(1, 1fr);
   }
-  .parent-container{
+
+  .details-container {
+    width: 100%;
+  }
+  .parent-container {
     display: flex;
     align-items: center;
     justify-content: center;

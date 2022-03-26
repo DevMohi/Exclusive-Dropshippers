@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
-const Bag = ({ bag , handleDetailsButton}) => {
-    const { name, price, image  } = bag;
+const Bag = ({ bag, handleDetailsButton }) => {
+    const { name, price, image } = bag;
 
     return (
         <Card className='shadow p-3  bg-body rounded border-0 ' style={{ width: '18rem' }}>
@@ -14,7 +14,7 @@ const Bag = ({ bag , handleDetailsButton}) => {
                 <Card.Text>
                     {price} TK
                 </Card.Text>
-                <Button variant="dark" onClick={()=>handleDetailsButton(bag)}>Add To Cart <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></Button>
+                <Button variant="dark" onClick={() => handleDetailsButton(bag)}>Add To Cart <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></Button>
             </Card.Body>
         </Card>
     );
