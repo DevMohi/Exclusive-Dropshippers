@@ -4,9 +4,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 const Bag = ({ bag , handleDetailsButton}) => {
-    const { name, price, image ,id2 } = bag;
-
-
+    const { name, price, image  } = bag;
 
     return (
         <Card className='shadow p-3  bg-body rounded border-0 ' style={{ width: '18rem' }}>
