@@ -15,7 +15,7 @@ const Bags = () => {
             <Container>
                 <Row>
                     <Col sm={9}>
-                        <h1>All Bags</h1>
+                        <h1 className='py-2'>All Bags</h1>
                         <div className='parent-bag'>
                             {
                                 bags.map(bag => <Bag
