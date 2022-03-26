@@ -1,6 +1,6 @@
 # Exclusive Dropshippers
 
-Website link[Netlify link](https://exclusive-dropshippers.netlify.app/).
+Website link [Netlify link](https://exclusive-dropshippers.netlify.app/).
 
 <!-- In the project directory, you can run:
 
