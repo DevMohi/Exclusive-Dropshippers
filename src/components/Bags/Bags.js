@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Accordion, Col, Container, Row } from 'react-bootstrap';
 import Bag from '../Bag/Bag';
 import Detail from '../Detail/Detail';
 import './Bags.css'
@@ -9,11 +9,6 @@ const Bags = () => {
     const [bags, setBags] = useState([])
     const [details, setDetails] = useState([])
 
-
-
-    // const [random, setRandom] = useState([]) 
-
-
     useEffect(() => {
         fetch('db.json')
             .then(res => res.json())
@@ -21,16 +16,13 @@ const Bags = () => {
     }, [])
 
     const handleDetailsButton = (bag) => {
-        
+
         const newBag = [...details, bag]
         console.log(newBag)
-        if(newBag.length<=4){
+        if (newBag.length <= 4) {
             setDetails(newBag)
         }
         document.getElementById('random-container').style.display = 'block'
-
-        // const newMeal = [...details, bags];
-        // setDetails(newMeal);
     }
 
 
@@ -42,33 +34,28 @@ const Bags = () => {
 
         for (const detail of details) {
             arr.push(parseInt(detail.id))
-            // const { name } = detail 
 
-            // const numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
             randomNumber = arr[Math.floor(Math.random() * arr.length)]
 
             if (randomNumber === parseInt(detail.id)) {
                 console.log(detail)
-                setDetails([detail]) 
+                setDetails([detail])
                 document.getElementById('result').style.display = 'block'
 
             }
         }
-
-
     }
 
-    // console.log(random) 
 
     const resetCart = () => [
         setDetails([]),
         document.getElementById('result').style.display = 'none'
     ]
     return (
-        <div>
-            <Row>
+        <div >
+            <Row className='parent-container'>
                 <Col sm={8}>
-                    <h1 className='py-2'>All Bags</h1>
+                    <h2 className='py-2'>Exclusive</h2>
                     <div className='parent-bag'>
                         {
                             bags.map(bag => <Bag
@@ -104,6 +91,34 @@ const Bags = () => {
 
                 </Col>
             </Row>
+
+            <div className='my-5 px-5'>
+                <Accordion defaultActiveKey="0">
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>How React Works?</Accordion.Header>
+                        <Accordion.Body>
+                            <p>
+                                React, at its heart, essentially maintains a tree for you. On the nodes, this tree can perform efficient diff computations.
+                                Consider your HTML code to be a tree. That is, in fact, how the browser handles your DOM (your rendered HTML on the browser). React allows you to essentially re-construct your DOM in JavaScript and only push the changes that have actually occurred to the DOM.
+                                React uses Virtual DOM to speed up the development of web apps. Instead of updating all of the components again, as traditional web applications do, Virtual DOM examines the components' prior states and updates only the objects in the Real DOM that have changed.
+                            </p>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item >
+                        <Accordion.Header>Props Vs State</Accordion.Header>
+                        <Accordion.Body>
+                            <p>Props are immutable . Props are used to pass data from one component to another. Props are read only .It can be used with state and functional components. Coming to State, the data is passed within the component only. It is mutable. State is both read and write, also state can be used only within the state components.</p>
+                        </Accordion.Body>
+                    </Accordion.Item>
+
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header>How Use State Works?</Accordion.Header>
+                        <Accordion.Body className='text-left'>
+                            useState is a Hook(function) that allows you to have state variables in functional components. You pass the initital state to this function and it returns a variable with the current state value and also another function to update this value.
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            </div>
         </div>
     );
 };

@@ -4,9 +4,9 @@ import { Container, Navbar } from 'react-bootstrap';
 const Header = () => {
     return (
         <Navbar bg="dark" variant="dark">
-            <Container>
+
                 <Navbar.Brand href="#home">Exclusive Dropshippers</Navbar.Brand>
-            </Container>
+    
         </Navbar>
     );
 };
