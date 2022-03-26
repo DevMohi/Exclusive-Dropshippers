@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Detail = ({ detail }) => {
-    const { name, image, name2 } = detail;
+    const { name, image } = detail;
 
 
     return (

@@ -70,8 +70,8 @@ const Bags = () => {
 
 
                 <Col sm={4}>
-                    <h3 className='py-2'>Details</h3>
 
+                    <h3 className='py-2'>Details</h3>
                     <div className='py-5'>
                         {
                             details.map(detail =>
