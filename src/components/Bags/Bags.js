@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Bag from '../Bag/Bag';
+import Detail from '../Detail/Detail';
 import './Bags.css'
 
 const Bags = () => {
@@ -15,7 +16,7 @@ const Bags = () => {
 
     const handleDetailsButton = (bag) => {
         console.log(bag)
-        const newBag = [...details , bag] 
+        const newBag = [...details, bag]
         setDetails(newBag)
         // const newMeal = [...details, bags];
         // setDetails(newMeal);
@@ -31,7 +32,7 @@ const Bags = () => {
                             bags.map(bag => <Bag
                                 key={bag.id}
                                 bag={bag}
-                                handleDetailsButton = {handleDetailsButton}
+                                handleDetailsButton={handleDetailsButton}
                             ></Bag>)
                         }
                     </div>
@@ -40,10 +41,15 @@ const Bags = () => {
 
 
                 <Col sm={4}>
-                    <h3>Details</h3>
-                    {
-                    details.map(detail => console.log(detail))
-                    }
+                    <h3 className='py-3'>Details</h3>
+                    <div className='ms-2 me-2'>
+                        {
+                            details.map(detail => <Detail
+                                key={detail.id2}
+                                detail={detail}
+                            ></Detail>)
+                        }
+                    </div>
                 </Col>
             </Row>
         </div>

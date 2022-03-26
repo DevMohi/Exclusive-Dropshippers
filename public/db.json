@@ -1,72 +1,85 @@
 [
   {
     "id": "623ea2ca9d86677ba711541d",
+    "id2": "1",
     "price": 620,
     "name": "Golden Luxury Bags",
     "image":"https://img.freepik.com/free-photo/fashion-hand-new-women-luxury_1203-6508.jpg?size=626&ext=jpg&ga=GA1.2.1611677463.1648271746"
+
   },
   {
     "id": "623ea2caf0d1eef232bda9f3",
+    "id2": "2",
     "price": 1000,
     "name": "Rough Luxury Bags",
     "image":"https://img.freepik.com/free-photo/women-bag_1159-798.jpg?size=338&ext=jpg&ga=GA1.2.1611677463.1648271746"
   },
   {
     "id": "623ea2ca7b0c4af06a806e47",
+    "id2": "3",
     "price": 300,
     "name": "Pink Luxury Bags",
     "image":"https://img.freepik.com/free-photo/beautiful-elegance-luxury-fashion-pink-women-handbag_1203-7653.jpg?size=626&ext=jpg&ga=GA1.2.1611677463.1648271746"
   },
   {
     "id": "623ea2caf3d5d12c0d7e6c09",
+    "id2": "4",
     "price": 240,
     "name": "Diablo Bag",
     "image":"https://img.freepik.com/free-photo/elegant-woman-accessories-hand-bag-high-heel-shoes_72402-2392.jpg?size=626&ext=jpg&ga=GA1.2.1611677463.1648271746"
   },
   {
     "id": "623ea2cadfa264566beffa9a",
+    "id2": "5",
     "price": 120,
     "name": "Ideal Black",
     "image":"https://t3.ftcdn.net/jpg/02/84/40/60/240_F_284406037_iA5oxljrqmWsrHoSYzJtsiBt1SqStBJS.jpg"
   },
   {
     "id": "623ea2cad7d512c1baedbb1a",
+    "id2": "6",
     "price": 228,
     "name": "Dami Elegant Bag",
     "image":"https://img.freepik.com/free-photo/beautiful-elegance-luxury-fashion-women-bag_1203-7665.jpg?size=626&ext=jpg&ga=GA1.1.1611677463.1648271746"
   },
   {
     "id": "623ea2ca04068a7e3bab45b6",
+    "id2": "7",
     "price": 1220,
     "name": "The Trendy Bag",
     "image":"https://img.freepik.com/free-psd/beautiful-shopping-bag-mockup_53876-98794.jpg?size=626&ext=jpg&ga=GA1.2.1611677463.1648271746"
   },
   {
     "id": "623ea2cad03fa567442cbbe7",
+    "id2": "8",
     "price": 1350,
     "name": "Fashionista Bag",
     "image":"https://img.freepik.com/free-photo/shopping-during-sales_1098-16687.jpg?size=626&ext=jpg&ga=GA1.2.1611677463.1648271746"
   },
   {
     "id": "623ea2ca49c266ea1c5a94c9",
+    "id2": "9",
     "price": 1000,
     "name": "Exquisite Canva",
     "image":"https://img.freepik.com/free-psd/canvas-bag-mockup_35913-1446.jpg?size=338&ext=jpg&ga=GA1.2.1611677463.1648271746"
   },
   {
     "id": "623ea2ca9ecb8d03ce2fff19",
+    "id2": "10",
     "price": 165,
     "name": "Biryani",
     "image":"https://img.freepik.com/free-photo/sausage-fried-rice-with-tomatoes-carrots-shiitake-mushrooms-plate_1150-27184.jpg?size=626&ext=jpg&ga=GA1.1.1611677463.1648271746"
   },
   {
     "id": "623ea2ca15f4ef88e78cad31",
+    "id2": "11",
     "price": 140,
     "name": "Chinese Blue Bag",
     "image":"https://img.freepik.com/free-psd/tote-bag-mockup-psd-fashion-style_53876-116352.jpg?size=626&ext=jpg&ga=GA1.2.1611677463.1648271746"
   },
   {
     "id": "623ea2ca3ca0670c51caab10",
+    "id2": "12",
     "price": 480,
     "name": "Ultimate Giftable Bag",
     "image":"https://img.freepik.com/free-psd/luxury-packaging-mockup-psd-with-gift-box-bag_53876-116359.jpg?size=626&ext=jpg&ga=GA1.2.1611677463.1648271746"
