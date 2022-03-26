@@ -1,3 +1,4 @@
+import { Button } from 'bootstrap';
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Bag from '../Bag/Bag';
@@ -22,6 +23,9 @@ const Bags = () => {
         // setDetails(newMeal);
     }
 
+    const resetCart = () =>[
+        setDetails([])
+    ]
     return (
         <div>
             <Row>
@@ -42,6 +46,7 @@ const Bags = () => {
 
                 <Col sm={4}>
                     <h3 className='py-3'>Details</h3>
+
                     <div className='ms-2 me-2'>
                         {
                             details.map(detail => <Detail
@@ -50,6 +55,12 @@ const Bags = () => {
                             ></Detail>)
                         }
                     </div>
+
+                    <div>
+                        <button className='mx-2'>Choose For Me</button> 
+                        <button onClick={resetCart}>Reset</button>
+                    </div>
+
                 </Col>
             </Row>
         </div>

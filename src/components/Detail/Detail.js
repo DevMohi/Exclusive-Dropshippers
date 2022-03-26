@@ -12,10 +12,9 @@ const Detail = ({ detail }) => {
             <div className='ms-auto'>
                 <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon>
             </div>
+
+            
         </div>
-
-
-
     );
 };
 
